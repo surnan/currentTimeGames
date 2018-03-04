@@ -15,7 +15,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        //        navigationController?.navigationBar.isTranslucent = false  <--- when used in regular code
+        //below is APPEARANCE PROXY
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().tintColor = UIColor.white
+//        UINavigationBar.appearance().barTintColor = UIColor.lightRed
+        UINavigationBar.appearance().prefersLargeTitles = true
+        UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white]
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white]
+        
+        window = UIWindow()
+        window?.makeKeyAndVisible()
+        
+        //        let companiesController = CompaniesController() //CompaniesAutoUpdateController
+//        
+//        let companiesController = CompaniesAutoUpdateController()
+//        
+//        let navController = CustomNavigationController(rootViewController: companiesController)
+//        
+//        let Create_Daily_TasksVC = c
+        window?.rootViewController = Create_Daily_Tasks_ViewController()
+        return true
+        
+        
+        
+        
+        
+        
+        
+        
+        
         return true
     }
 

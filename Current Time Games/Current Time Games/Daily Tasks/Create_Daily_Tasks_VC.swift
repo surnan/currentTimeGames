@@ -8,9 +8,9 @@
 
 import UIKit
 
-class Create_Daily_Tasks_ViewController: UIViewController {
+class Create_Daily_Tasks_ViewController: UITableViewController {
 
-    
+    let dailyCell = "dailyCell"
     
     
     func getTime(){
@@ -32,20 +32,30 @@ class Create_Daily_Tasks_ViewController: UIViewController {
         print("reload Button Pressed")
     }
     
+    //MARK: UITableView functions
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        return UITableViewCell()
+        return DailyTaskCell()
+    }
     
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
     
-    override func viewDidLoad() {
+    //MARK: View functions
+    override func viewDidLoad(){
         super.viewDidLoad()
         view.backgroundColor = UIColor.lightBlue
-        
         getTime()
-        
         navigationItem.leftBarButtonItems = [UIBarButtonItem(title: "Reload", style: .plain, target: self, action: #selector(handleLeftButton))]
         navigationItem.rightBarButtonItems = [ UIBarButtonItem(title: "Add Task", style: .plain, target: self, action: #selector(handleRightButton))]
         
-    
-    
+        tableView.register(DailyTaskCell.self, forCellReuseIdentifier: dailyCell )
+        
     }
 }
 

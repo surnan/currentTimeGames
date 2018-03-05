@@ -12,6 +12,7 @@
 		84499175204C131200B26B52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84499174204C131200B26B52 /* Assets.xcassets */; };
 		84499178204C131200B26B52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84499176204C131200B26B52 /* LaunchScreen.storyboard */; };
 		84DD455A204DB75100D50A5B /* UiColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD4559204DB75100D50A5B /* UiColor+Theme.swift */; };
+		84DD455F204DEAF600D50A5B /* Daily_Tasks_Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD455E204DEAF600D50A5B /* Daily_Tasks_Cell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		84499177204C131200B26B52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84499179204C131200B26B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84DD4559204DB75100D50A5B /* UiColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiColor+Theme.swift"; sourceTree = "<group>"; };
+		84DD455E204DEAF600D50A5B /* Daily_Tasks_Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_Tasks_Cell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,22 @@
 			isa = PBXGroup;
 			children = (
 				8449916D204C131200B26B52 /* AppDelegate.swift */,
-				8449916F204C131200B26B52 /* Create_Daily_Tasks_VC.swift */,
+				84DD455D204DEACE00D50A5B /* Daily Tasks */,
 				84499174204C131200B26B52 /* Assets.xcassets */,
 				84499176204C131200B26B52 /* LaunchScreen.storyboard */,
 				84499179204C131200B26B52 /* Info.plist */,
 				84DD4559204DB75100D50A5B /* UiColor+Theme.swift */,
 			);
 			path = "Current Time Games";
+			sourceTree = "<group>";
+		};
+		84DD455D204DEACE00D50A5B /* Daily Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				8449916F204C131200B26B52 /* Create_Daily_Tasks_VC.swift */,
+				84DD455E204DEAF600D50A5B /* Daily_Tasks_Cell.swift */,
+			);
+			path = "Daily Tasks";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84DD455F204DEAF600D50A5B /* Daily_Tasks_Cell.swift in Sources */,
 				84499170204C131200B26B52 /* Create_Daily_Tasks_VC.swift in Sources */,
 				8449916E204C131200B26B52 /* AppDelegate.swift in Sources */,
 				84DD455A204DB75100D50A5B /* UiColor+Theme.swift in Sources */,

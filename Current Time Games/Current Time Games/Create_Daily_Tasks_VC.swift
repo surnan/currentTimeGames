@@ -10,14 +10,42 @@ import UIKit
 
 class Create_Daily_Tasks_ViewController: UIViewController {
 
+    
+    
+    
+    func getTime(){
+        let date = Date()
+        let calendar = Calendar.current
+        let hour = calendar.component(.hour, from: date)
+        let minutes = calendar.component(.minute, from: date)
+        
+        print("date = \(date) .... calendar = \(calendar)")
+        print("hour = \(hour) .... minutes = \(minutes)")
+    }
+    
+    
+    @objc private func handleRightButton(){
+        print("addTask Pressed")
+    }
+    
+    @objc private func handleLeftButton(){
+        print("reload Button Pressed")
+    }
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.backgroundColor = UIColor.lightBlue
         
-        view.backgroundColor = UIColor.green
+        getTime()
         
+        navigationItem.leftBarButtonItems = [UIBarButtonItem(title: "Reload", style: .plain, target: self, action: #selector(handleLeftButton))]
+        navigationItem.rightBarButtonItems = [ UIBarButtonItem(title: "Add Task", style: .plain, target: self, action: #selector(handleRightButton))]
         
-        
+    
+    
     }
 }
 

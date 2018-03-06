@@ -18,7 +18,7 @@ class DailyTaskCell: UITableViewCell {
         label.backgroundColor = UIColor.yellow
         label.textColor = UIColor.black
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "!!!HELP ME HELP ME!!!"
+        label.text = "!!!Hello World!!!"
         return label
     }()
 

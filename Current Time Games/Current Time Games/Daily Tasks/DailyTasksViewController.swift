@@ -8,9 +8,17 @@
 
 import UIKit
 
-class Create_Daily_Tasks_ViewController: UITableViewController {
+class DailyTasksViewController: UITableViewController, CreateDailyTaskControllerDelegate {
 
     let dailyCell = "dailyCell"
+    
+    
+    func didAddDailyTask(){
+        print("something")
+    }
+    func didEditDailyTask(){
+        print("something")
+    }
     
     
     func getTime(){
@@ -26,6 +34,12 @@ class Create_Daily_Tasks_ViewController: UITableViewController {
     
     @objc private func handleRightButton(){
         print("addTask Pressed")
+        let createDailyTaskController = CreateDailyTaskController()
+        let navController = UINavigationController(rootViewController: createDailyTaskController)
+        
+        createDailyTaskController.delegate = self
+        present(navController, animated: true, completion: nil)
+        
     }
     
     @objc private func handleLeftButton(){

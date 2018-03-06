@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        let myNavigationController = CustomNavigationController(rootViewController: Create_Daily_Tasks_ViewController())
+        let myNavigationController = CustomNavigationController(rootViewController: DailyTasksViewController())
         myNavigationController.navigationBar.barTintColor = UIColor.lightRed
         myNavigationController.navigationBar.tintColor = UIColor.white
         window = UIWindow()

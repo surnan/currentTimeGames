@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8449916E204C131200B26B52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449916D204C131200B26B52 /* AppDelegate.swift */; };
-		84499170204C131200B26B52 /* Create_Daily_Tasks_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449916F204C131200B26B52 /* Create_Daily_Tasks_VC.swift */; };
+		84499170204C131200B26B52 /* DailyTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449916F204C131200B26B52 /* DailyTasksViewController.swift */; };
 		84499175204C131200B26B52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84499174204C131200B26B52 /* Assets.xcassets */; };
 		84499178204C131200B26B52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84499176204C131200B26B52 /* LaunchScreen.storyboard */; };
+		844A3A83204E498600AC39F2 /* CreateDailyTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A3A82204E498600AC39F2 /* CreateDailyTaskController.swift */; };
 		84DD455A204DB75100D50A5B /* UiColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD4559204DB75100D50A5B /* UiColor+Theme.swift */; };
 		84DD455F204DEAF600D50A5B /* Daily_Tasks_Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD455E204DEAF600D50A5B /* Daily_Tasks_Cell.swift */; };
 /* End PBXBuildFile section */
@@ -18,10 +19,11 @@
 /* Begin PBXFileReference section */
 		8449916A204C131200B26B52 /* Current Time Games.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Current Time Games.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8449916D204C131200B26B52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8449916F204C131200B26B52 /* Create_Daily_Tasks_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Create_Daily_Tasks_VC.swift; sourceTree = "<group>"; };
+		8449916F204C131200B26B52 /* DailyTasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTasksViewController.swift; sourceTree = "<group>"; };
 		84499174204C131200B26B52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84499177204C131200B26B52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84499179204C131200B26B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		844A3A82204E498600AC39F2 /* CreateDailyTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDailyTaskController.swift; sourceTree = "<group>"; };
 		84DD4559204DB75100D50A5B /* UiColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiColor+Theme.swift"; sourceTree = "<group>"; };
 		84DD455E204DEAF600D50A5B /* Daily_Tasks_Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_Tasks_Cell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,21 +58,30 @@
 		8449916C204C131200B26B52 /* Current Time Games */ = {
 			isa = PBXGroup;
 			children = (
-				8449916D204C131200B26B52 /* AppDelegate.swift */,
-				84DD455D204DEACE00D50A5B /* Daily Tasks */,
-				84499174204C131200B26B52 /* Assets.xcassets */,
-				84499176204C131200B26B52 /* LaunchScreen.storyboard */,
 				84499179204C131200B26B52 /* Info.plist */,
+				84ADF2AB204E47BA003C4BEF /* Support Files */,
+				84DD455D204DEACE00D50A5B /* Daily Tasks */,
 				84DD4559204DB75100D50A5B /* UiColor+Theme.swift */,
 			);
 			path = "Current Time Games";
 			sourceTree = "<group>";
 		};
+		84ADF2AB204E47BA003C4BEF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				84499176204C131200B26B52 /* LaunchScreen.storyboard */,
+				8449916D204C131200B26B52 /* AppDelegate.swift */,
+				84499174204C131200B26B52 /* Assets.xcassets */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
 		84DD455D204DEACE00D50A5B /* Daily Tasks */ = {
 			isa = PBXGroup;
 			children = (
-				8449916F204C131200B26B52 /* Create_Daily_Tasks_VC.swift */,
+				8449916F204C131200B26B52 /* DailyTasksViewController.swift */,
 				84DD455E204DEAF600D50A5B /* Daily_Tasks_Cell.swift */,
+				844A3A82204E498600AC39F2 /* CreateDailyTaskController.swift */,
 			);
 			path = "Daily Tasks";
 			sourceTree = "<group>";
@@ -147,7 +158,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				84DD455F204DEAF600D50A5B /* Daily_Tasks_Cell.swift in Sources */,
-				84499170204C131200B26B52 /* Create_Daily_Tasks_VC.swift in Sources */,
+				84499170204C131200B26B52 /* DailyTasksViewController.swift in Sources */,
+				844A3A83204E498600AC39F2 /* CreateDailyTaskController.swift in Sources */,
 				8449916E204C131200B26B52 /* AppDelegate.swift in Sources */,
 				84DD455A204DB75100D50A5B /* UiColor+Theme.swift in Sources */,
 			);
